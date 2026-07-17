@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>contacter zéro carbone</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+<meta property="og:description" content="research in the field of Zero emission science and technology" />
+    <meta property="og:image" content="http://h2city.org/images/city.png" />
+    <meta property="og:url" content="http://h2city.org" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+<style>
+	.contact-form-container {
+		margin-top: 30px;
+		padding: 20px;
+		background: #fdfdfd;
+		border: 1px solid #eaeaea;
+		border-radius: 5px;
+	}
+	.contact-form-container h3 {
+		margin-bottom: 20px;
+		border-bottom: 2px solid #5cb85c;
+		padding-bottom: 10px;
+		color: #333;
+	}
+	#contact-form label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: bold;
+		color: #555;
+	}
+	#contact-form input[type="text"],
+	#contact-form input[type="email"],
+	#contact-form textarea {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-family: inherit;
+		font-size: 14px;
+	}
+	#contact-form textarea {
+		height: 120px;
+		resize: vertical;
+	}
+	#contact-form button[type="submit"] {
+		background-color: #5cb85c;
+		color: white;
+		padding: 12px 24px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: bold;
+		transition: background-color 0.3s;
+	}
+	#contact-form button[type="submit"]:hover {
+		background-color: #4cae4c;
+	}
+</style>
+</head>
+<body>
+	<div id="head">
+		<div class="wrap">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+				<div class="nav">
+					<ul>
+						<li ><a href="index.html">accuel</a></li>
+		                <li><a href="supports.html">Soutient</a></li>
+	                 	<li><a href="news.html">nouvelles</a></li>
+	                	<li><a href="about.html">à prope de</a></li>
+	                	<li class="active"><a href="contact.html">contacter</a></li>
+	                	<li><a href="index2.html">English</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+			<div id="header">
+				<div class="wrap">
+			<div class="sub-header">
+				<img src="images/monitor.png" alt="" width="310" class="mac" />
+			    <div class="desp"><h1>Institut de recherche sur l'industrie zéro carbone</h1>
+					<h1>est une organisation internationale dans le but de créer une communauté mondiale pour encourager la recherche et les partenariats dans le domaine de la science et de la technologie à zéro émission. </h1>
+					<p>  </p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		</div>
+		
+		<div id="main">
+			<div class="wrap">
+				<div class="contact">
+			<h3>Nous trouver</h3>
+			
+			<p> Tél : +1 705 530 5666  Email: : info@zciri.org </p>
+			<h3>Institut de recherche sur l'industrie zéro carbone </h3>
+			<p>Ajouter:2290 Chemin St François, Dorval, QC H9P 1K2 </p>
+			<div class="map">
+			<iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44763.44616637283!2d-73.78619!3d45.475537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93cfc30015271%3A0xcb29eae97db8f986!2s2290%20Chemin%20St%20Fran%C3%A7ois%2C%20Dorval%2C%20QC%20H9P%201K2!5e0!3m2!1szh-CN!2sca!4v1718682102562!5m2!1szh-CN!2sca"></iframe>
+	    	</div>	
+	    	
+	    	<p> Tél : +1 604 367 6668 </p>
+			<p> Ajouter: 8988 Fraserton Court,Burnaby,BC V5J 5H8 </p>
+			<p>  </p>
+			
+			
+			<div class="map">
+					</div>	 	   		
+	
+					
+			 
+
+
+<div class="contact-form-container">
+    <h3>Contactez-nous</h3>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("vvW6IulZGg5cAFR-S");
+       })();
+    </script>
+
+    <form id="contact-form">
+        <label>Nom:</label>
+        <input type="text" name="user_name" required>
+        
+        <label>Email:</label>
+        <input type="email" name="user_email" required>
+        
+        <label>Message:</label>
+        <textarea name="message" required></textarea>
+
+        <input type="hidden" name="user_ip" id="user_ip" value="Unknown">
+        
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <script>
+      // 替换 contact2.html 里的旧 fetch 区域
+// 优先使用专门返回标准数字 IPv4 的接口
+fetch('https://api4.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+      if(data.ip) {
+          document.getElementById('user_ip').value = data.ip;
+      }
+  })
+  .catch(error => {
+      console.error('Primary IP fetch failed, trying backup...', error);
+      // 备用接口 1：ip-api (能顺便带出国家城市)
+      fetch('https://ipapi.co/json/')
+          .then(res => res.json())
+          .then(data => { if(data.ip) document.getElementById('user_ip').value = data.ip; })
+          .catch(e => {
+              // 备用接口 2：vvhan (国内/亚洲节点加速)
+              fetch('https://api.vvhan.com/api/ip')
+                  .then(res => res.json())
+                  .then(data => { if(data.ip) document.getElementById('user_ip').value = data.ip; })
+                  .catch(err => console.log('All IP providers failed.'));
+          });
+  });
+
+      // 表单提交事件
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const submitButton = this.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.innerText = 'Sending...';
+        
+        // 发送表单内容（包含隐藏的 user_ip）
+        emailjs.sendForm('service_hfjor7g', 'template_licn5hi', this)
+          .then(function() {
+            alert('Sent successfully！');
+            document.getElementById('contact-form').reset();
+            submitButton.disabled = false;
+            submitButton.innerText = 'Send';
+          }, function(error) {
+            alert('Failed to send: ' + JSON.stringify(error));
+            submitButton.disabled = false;
+            submitButton.innerText = 'Send';
+          });
+      });
+    </script>
+</div>
+				
+				
+			
+			</div>
+			
+			
+				<div class="sidebar">
+				<div class="sub-sidebar">
+				<h2>DERNIÈRES ACTUALITÉS</h2>
+				<ul class="sub-nav">
+				
+	
+		
+		<li>
+			<div class="thumbnail"><a class="txt" href="https://www.iaoees.org/news/HighlyCited_IAOEES_Rresearchers2020.php" target="_blank">
+				<img src="images/HighlyCited_IAOEES_Rresearchers2020.png" /></a></div>
+			<div class="info">
+				<a class="txt" href=" https://www.iaoees.org/news/HighlyCited_IAOEES_Rresearchers2020.php" target="_blank">
+				Congratulations to 58 board committee members of IAOEES 
+				for being rated as the highly cited researchers 2020 in the world ... </a>
+				</div>
+			<div class="clear"></div>
+		</li>
+		
+		
+		<li>
+			<div class="thumbnail"><a class="txt" href="https://www.iaoees.org/pdf/DrWhittinghamOnPDAC2020.pdf" target="_blank">
+				<img src="images/Joey_WhittinghamInPDAC_Ico.png" /></a></div>
+			<div class="info">
+				<a class="txt" href="https://www.iaoees.org/pdf/DrWhittinghamOnPDAC2020.pdf" target="_blank">
+				On March 2, 2020, Dr. M. Stanley Whittingham, Honorary Chairman of IAOEES, 2019 Nobel Laureate in Chemistry, met with Prof. Joey Jung, IAOEES’ Co-Founder and Vice President of Finance, at a special event at PDAC 2020 in Toronto, ON, Canada. ... </a>
+				</div>
+			<div class="clear"></div>
+		</li>
+		
+	
+		
+		
+		
+		
+
+
+	               	
+	               	
+	               	
+	               	
+					
+					<li><a href="#">More News</a></li>
+					
+					<div class="sub-sidebar">
+				     <h2>Sponsors</h2>
+				     <ul class="sub-nav">
+					<li>
+		         	<div class="thumbnail"><a class="txt" href="https://www.iaoees.org/pdf/HonoraryChairmanWhittingham.pdf" target="_blank">
+			     	<img src="images/zhang.png" /></a></div>
+		         	<div class="info">
+			     	<a class="txt" href="https://www.iaoees.org/pdf/HonoraryChairmanWhittingham.pdf" target="_blank">
+			        	Prof. M. Stanley Whittingham has been appointed as Honorary Chairman of 
+			          	The International Academy of Electrochemical Energy Science (IAOEES) at EEST2018 ... </a>
+				</div>
+		          	<div class="clear"></div>
+	             	</li>
+
+					<li>
+			<div class="thumbnail"><a class="txt" href="https://www.iaoees.org/news/JoeyJung_Won_Inventions_Geneva_2022.php" target="_blank">
+				<img src="images/JoeyJung_Won_Inventions_Geneva_2022_s.png" /></a></div>
+			<div class="info">
+				<a class="txt" href="https://www.iaoees.org/news/JoeyJung_Won_Inventions_Geneva_2022.php" target="_blank">
+				Congratulations! <br />
+				Board Committee Members, <strong>Joey Jung, Jiujun Zhang, Pang-Chieh Sui</strong> and the team, were awarded Silver Medal of the International Exhibition of Inventions of Geneva 2022 ... </a>
+				</div>
+			<div class="clear"></div>
+	            	</li>
+					
+					
+					<li><a href="contact.html">Contact with our team</a></li>
+				
+				</ul></div>
+				
+				
+			</div>
+		</div>
+			<div class="clear"></div>
+		</div>
+	<div class="footer">
+		<div class="wrap">
+					<div id="fbr">
+			<p>Copyright ©<a target="_blank" href="http://www.zerocarbon.wang">Zero Carbon Industry Research </a><a target="_blank" href="http://sci-c.org">  VIDO Design</a></p>
+			<div class="ft-nav">
+					<ul>
+						<li ><a href="index2.html">Home</a></li>
+						<li><a href="building2.html">Building</a></li>
+						<li><a href="energy2.html">Energy</a></li>
+						<li><a href="about2.html">About</a></li>
+						<li class="active"><a href="contact2.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+		</div>
+	</div></div>
+</body>
+</html>
